@@ -5,7 +5,7 @@ This BuenoCache example persists a collection of _user-objects_ in an IndexedDB
 
 ### Click the link below to run this demo:   
 
-https://nhrones.github.io/BuenoCache/    
+https://nhrones.github.io/Hot_BuenoCache/    
   - This will run the app from Github Pages.    
   - The app will first build then hydrate an IndexedDB -> workDB -> ObjectStore    
   - Any mutation of the data will be consistently persisted to this ObjectStore
