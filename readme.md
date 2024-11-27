@@ -14,7 +14,7 @@ This BuenoCache example persists a collection of 100k _user-objects_ in an Index
 ### Instantaneous ordering, filtering, pagination
 
 BuenoCache is an extremely performant in-memory data service.     
-This example serves a collection of 100k _user-objects_ persisted in a local IndexedDB.    
+This demo serves a collection of 100k _user-objects_ persisted in a local IndexedDB.    
 
 ### Click the link or image below to run this demo:   
 https://nhrones.github.io/Hot_BuenoCache/ 
@@ -36,7 +36,7 @@ https://nhrones.github.io/Hot_BuenoCache/
  - You'll notice a very resposive UI, as most data ops are on a worker thread.    
  - I've tested with 5 million records with no IDB or UI issues.    
 
-This example app demonstrates full **CRUD** of the 100k user objects:
+This demonstration app exercises full **CRUD** of the 100k user objects:
 ```js
 /** a `User` object ...*/
 User = {
@@ -47,14 +47,14 @@ User = {
 } 
 
 /**
- * Hydrate from the IndexedDB worker 
+ * Hydration from the IndexedDB worker 
  * one hundred thousand `stringyfied` User objects
  * @ param hundredK =~ 6 million chars - 7.6 MB
  */
 worker.onmessage(hundredK) =>
    buenoCache = new Map([...JSON.parse(hundredK)])
 
-// Persist to the IndexedDB worker
+// Persist asynchronously via the IndexedDB worker using a transactionID
 worker postMessage(id, value = JSON.stringify([...buenoCache.entries()]))
 ```
 
