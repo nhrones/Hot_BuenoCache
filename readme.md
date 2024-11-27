@@ -66,7 +66,7 @@ See: https://github.com/nhrones/Devtools_Hot
 
 It will also run from any other dev server from the /dist/ folder.     
 
-The included utility _./builder.ts/_ can be used to rebuild when needed.
+If not using Devtools_Hot, The included utility _./builder.ts/_ can be used to rebuild when needed.
 ```
 > deno run -A --quiet builder.ts
 ```
