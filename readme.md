@@ -73,8 +73,6 @@ This will refresh the _./dist/bundle.js/_ file.
 
 ## Observed performance
 
- ![alt text](./images/buenoCacheIDB.png)
-
 You can appreciate the performance of this persisted cache, by deleting the IndexedDB dataset while the app is running.    
 On the next mutation operation of bueno-cache, the app will reconstruct the original  IndexedDB demonstration store.   
 This is imperceptible to the UX, as this is mostly off-UI-thread.   
