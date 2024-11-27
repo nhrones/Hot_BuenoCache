@@ -58,9 +58,9 @@ worker.onmessage(hundredK) =>
 worker postMessage(id, value = JSON.stringify([...buenoCache.entries()]))
 ```
 
-## Note -> Devtools_Hot app: 
+## Note -> This is a Devtools_Hot app: 
 This app has been bundled with esBuild (automagicly within Devtools_Hot)!    
-The app is architected for, and prefers to run from **_Devtools_Hot_**
+The app is architected for, and prefers to run from **_Devtools_Hot_**    
 See: https://github.com/nhrones/Devtools_Hot
 
 It will also run from any other dev server from the /dist/ folder.     
