@@ -59,13 +59,13 @@ worker postMessage(id, value = JSON.stringify([...buenoCache.entries()]))
 ```
 
 ## Note -> Devtools_Hot app: 
-This app has been bundled with esBuild (automatically in HotServe)!    
-The app is architectured for, and prefers to run from **_Devtools_Hot_**
+This app has been bundled with esBuild (automatically within HotServe)!    
+The app is architected for, and prefers to run from **_Devtools_Hot_**
 See: https://github.com/nhrones/Devtools_Hot
 
 It will also run from any other dev server from the /dist/ folder.     
 
-If not using Devtools_Hot, The included utility _./builder.ts/_ can be used to rebuild when needed.
+If not using Devtools_Hot, The included utility _./builder.ts/_ can be used to manually rebuild as needed.
 ```
 > deno run -A --quiet builder.ts
 ```
