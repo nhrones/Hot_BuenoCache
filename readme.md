@@ -15,7 +15,6 @@ This BuenoCache example persists a collection of 100k _user-objects_ in an Index
 
 BuenoCache is an extremely performant in-memory data service.     
 This example serves a collection of 100k _user-objects_ persisted in a local IndexedDB.    
-  - Note: this cache service will work with almost any persitence layer.  I've used localStorage, IndexedDB, SQLite, and DenoKv. To insure a _consistent cache_, all DB-mutations must be wrapped in a transaction. 
 
 ### Click the link below to run this demo:   
 
