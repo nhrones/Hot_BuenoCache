@@ -16,14 +16,14 @@ This BuenoCache example persists a collection of 100k _user-objects_ in an Index
 BuenoCache is an extremely performant in-memory data service.     
 This example serves a collection of 100k _user-objects_ persisted in a local IndexedDB.    
 
-### Click the link below to run this demo:   
+### Click the link or image below to run this demo:   
+https://nhrones.github.io/Hot_BuenoCache/ 
 
-https://nhrones.github.io/Hot_BuenoCache/    
   - This will run the app from Github Pages.    
   - The app will first build then hydrate an IndexedDB -> workDB -> ObjectStore    
   - Any mutation of the bueno-cache will be consistently persisted to this ObjectStore
 
-![alt text](./images/table.png)
+[![alt text](./images/table.png)](https://nhrones.github.io/Hot_BuenoCache/)
 
 
 ## About this Proof Of Concept demo
