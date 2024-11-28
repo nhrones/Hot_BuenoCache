@@ -46,16 +46,20 @@ User = {
     age: number     // 10 - 70
 } 
 
-/**
- * Hydration from the IndexedDB worker 
- * one hundred thousand `stringyfied` User objects
- * @ param hundredK =~ 6 million chars - 7.6 MB
- */
+//
+// Hydration from the IndexedDB worker 
+// one hundred thousand `stringyfied` User objects
+// @ param hundredK =~ 6 million chars - 7.6 MB
+//
 worker.onmessage(hundredK) =>
    buenoCache = new Map([...JSON.parse(hundredK)])
 
-// Persist asynchronously via the IndexedDB worker using a transactionID
+// 
+// Persist asynchronously via the IndexedDB worker using  
+// a transaction (id). UI will catch failed transaction.
+//
 worker postMessage(id, value = JSON.stringify([...buenoCache.entries()]))
+
 ```
 
 ## Note -> This is a Devtools_Hot app: 
