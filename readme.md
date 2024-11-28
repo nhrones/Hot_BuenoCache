@@ -1,6 +1,7 @@
 # BuenoCache
 ## A _LocalFirst_ example application
   - Pure vanilla HTML, CSS, javascript application - no frameworks
+  - Old-school, hand-rolled-UI with fine-grained reactivity
   - Local async transaction-based IndexedDB persistence service
   - Zero dependencies -- None, Nada
   - Zero network requirements, statically served from Github Pages
